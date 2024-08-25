@@ -25,6 +25,10 @@ function App() {
     }
   };
 
+  const handleReset = () => {
+    setCounter(0);
+  };
+
   return (
     <div className="min-h-screen flex justify-center items-center">
       <div className="flex flex-col justify-center items-center p-5 w-full max-w-sm border-gray-500 rounded-xl text-lg md:text-2xl border-2 shadow-lg gap-4">
@@ -46,6 +50,12 @@ function App() {
             className="border-2 border-gray-500 rounded-lg p-3 w-full md:w-auto hover:text-gray-400 transition-all"
           >
             Subtract
+          </button>
+          <button
+            onClick={handleReset}
+            className="border-2 border-gray-500 rounded-lg p-3 w-full md:w-auto hover:text-gray-400 transition-all"
+          >
+            Reset
           </button>
         </div>
       </div>
